@@ -16,5 +16,7 @@ public class SecureApplication {
 //    EntityManagerFactory entityManagerFactory() {
 //        return entityManagerFactory();
 //    }
+	
+	//teste
 
 }

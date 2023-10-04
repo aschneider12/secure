@@ -10,20 +10,21 @@ import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 
 @Repository
-public class UserRepositoryImpDois<T, ID extends Serializable> extends SimpleJpaRepository<T, ID> {
+public class UserRepositoryImpDois //<T, ID extends Serializable> extends SimpleJpaRepository<T, ID> 
+{
 
-	private final EntityManager entityManager;
+	// private final EntityManager entityManager;
 
-	UserRepositoryImpDois(JpaEntityInformation entityInformation, EntityManager entityManager) {
-		super(entityInformation, entityManager);
+	// UserRepositoryImpDois(JpaEntityInformation entityInformation, EntityManager entityManager) {
+	// 	super(entityInformation, entityManager);
 
-		// Keep the EntityManager around to used from the newly introduced methods.
-		this.entityManager = entityManager;
-	}
+	// 	// Keep the EntityManager around to used from the newly introduced methods.
+	// 	this.entityManager = entityManager;
+	// }
 
-	@Transactional
-	public <S extends T> S salvarCustomizado(S entity) {
-		// implementation goes here
-		return null;
-	}
+	// @Transactional
+	// public <S extends T> S salvarCustomizado(S entity) {
+	// 	// implementation goes here
+	// 	return null;
+	// }
 }
